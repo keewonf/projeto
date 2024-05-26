@@ -6,11 +6,11 @@ function toggleMode(){
  
  if(html.classList.contains('light')) {
     
-    img.setAttribute('src', './assets/avatar-light.png')
+    img.setAttribute("src", "./assets/fotor-20240526114616.png")
     img.setAttribute('alt','Imagem com óculos')
 
   } else {
-    img.setAttribute("src", "./assets/avatar.png")
+    img.setAttribute("src", "./assets/fotor-20240526115143.png")
     img.setAttribute("alt", "Foto de perfil")
   }
 
