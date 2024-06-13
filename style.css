@@ -1,27 +1,26 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-:root{
+:root {
   --text-color: white;
   --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(./assets/moon-stars.svg) 
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
-.light{
+.light {
   --text-color: black;
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(./assets/sun.svg) 
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
 body {
@@ -32,12 +31,12 @@ body {
   background-size: cover;
   */
 
-  background: var(--bg-url) no-repeat top center /cover;
+  background: var(--bg-url) no-repeat top center / cover;
   height: 100vh;
 }
 
-body *{
-  font-family: 'Inter', sans-serif;
+body * {
+  font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 
@@ -53,13 +52,13 @@ body *{
   margin: 56px auto 0px;
 }
 
-#profile{
+#profile {
   text-align: center;
   padding: 24px;
 }
 
 #profile img {
-  width: 112px;  
+  width: 112px;
 }
 
 #profile p {
@@ -86,9 +85,8 @@ body *{
   position: absolute;
   top: 50%;
   left: 0;
-  z-index:1;
+  z-index: 1;
   transform: translateY(-50%);
-
   animation: slide-back 0.4s;
 }
 
@@ -113,11 +111,10 @@ body *{
   backdrop-filter: blur(4px);
   -webkit-backgrop-filter: blur(4px);
   border-radius: 9999px;
-
 }
 
 /* links */
-ul{
+ul {
   list-style: none;
 
   display: flex;
@@ -125,10 +122,9 @@ ul{
   gap: 16px;
 
   padding: 24px 0;
-  
 }
 
-ul li a{ 
+ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,7 +143,6 @@ ul li a{
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
-
 }
 
 /* social links */
@@ -170,10 +165,9 @@ ul li a:hover {
 
 #social-links a:hover {
   background: var(--highlight-color);
-
 }
 
-footer{
+footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
@@ -181,11 +175,11 @@ footer{
 
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets/bg-desktop.jpg);
+    --bg-url: url(./assets/background-love-dark.jpg);
   }
 
   .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg);
+    --bg-url: url(./assets/background-love.jpg);
   }
 }
 
@@ -207,6 +201,12 @@ footer{
   }
 }
 
+footer a {
+  text-decoration: none;
+}
 
-
-
+#gif {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}

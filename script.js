@@ -7,7 +7,7 @@ function toggleMode(){
  if(html.classList.contains('light')) {
     
     img.setAttribute("src", "./assets/fotor-20240526114616.png")
-    img.setAttribute('alt','Imagem com óculos')
+    img.setAttribute('alt','Imagem momi feliz')
 
   } else {
     img.setAttribute("src", "./assets/fotor-20240526115143.png")
